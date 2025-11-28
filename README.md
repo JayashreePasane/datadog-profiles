@@ -45,24 +45,24 @@ All generated metrics are tagged with things like:
 ### Generators
 
 - `generate_inlet_profile_metrics.py`  
-  Generates `bachmann_inlet.yml` – inlet-level electrical metrics:
+  Generates `bachmann_inlet.yaml` – inlet-level electrical metrics:
   - `bacCurrentMain`, `bacActivePowerUnit3`, …  
   - Metric types: gauges + counters (energy).
 
 - `generate_phase_metrics.py`  
-  Generates `bachmann_phase.yml` – per-phase metrics per unit:
+  Generates `bachmann_phase.yaml` – per-phase metrics per unit:
   - `bacVoltageMainL1`, `bacActivePowerUnit5L3`, …
 
 - `generate_outlet_phase_yaml.py`  
-  Generates `bachmann_outlet.yml` – per-phase, per-outlet metrics:
+  Generates `bachmann_outlet.yaml` – per-phase, per-outlet metrics:
   - `bacCurrentMainL1Outlet0`, `bacActiveEnergyUnit2L3Outlet3`, …
 
 - `generate_io_profile_metrics.py`  
-  Generates `bachmann_io.yml` – IO channel metrics:
+  Generates `bachmann_io.yaml` – IO channel metrics:
   - `ioOutputChannel1Main`, `ioInputChannel3Unit4`, …
 
 - `generate_env_profile_metrics.py`  
-  Generates `bachmann_env.yml` – temperature + humidity from up to 10 sensors per unit:
+  Generates `bachmann_env.yaml` – temperature + humidity from up to 10 sensors per unit:
   - `bacTemperatureMainSensor4`, `bacHumidityUnit7Sensor9`, …
 
 Each script prints a **complete Datadog SNMP profile** to stdout:
