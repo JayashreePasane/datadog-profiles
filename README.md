@@ -12,12 +12,12 @@ The goal is to keep all the  OID math and repetition in code, and auto-generate 
 
 The repo generates these profiles:
 
-- `bachmann_inlet.yml` – inlet-level electrical metrics (per unit)
-- `bachmann_phase.yml` – per-phase electrical metrics (L1, L2, L3 per unit)
-- `bachmann_outlet.yml` – per-phase, per-outlet electrical metrics
-- `bachmann_io.yml` – IO / digital channel metrics (input/output channels)
-- `bachmann_env.yml` – environmental sensors (temperature + humidity)
-- `bachmann_pdu.yml` – **parent profile** that extends all of the above
+- `bachmann_inlet.yaml` – inlet-level electrical metrics (per unit)
+- `bachmann_phase.yaml` – per-phase electrical metrics (L1, L2, L3 per unit)
+- `bachmann_outlet.yaml` – per-phase, per-outlet electrical metrics
+- `bachmann_io.yaml` – IO / digital channel metrics (input/output channels)
+- `bachmann_env.yaml` – environmental sensors (temperature + humidity)
+- `bachmann_pdu.yaml` – **parent profile** that extends all of the above
 
 Each profile is a valid Datadog SNMP profile and can be dropped into the DataDog Agent’s `snmp.d/profiles` directory.
 
