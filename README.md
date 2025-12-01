@@ -134,7 +134,7 @@ extends:
 
 ## Usage
 
-### 1. Generate all profiles
+###  Generate all profiles
 
 From the repository root:
 
